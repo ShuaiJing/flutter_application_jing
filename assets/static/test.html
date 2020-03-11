@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="callFlutter()">callFlutter</button>
+<button onclick="callJS('visible')">hide</button>
+<p id="p1" style="visibility:hidden;">
+    Flutter 调用了 JS.
+    Flutter 调用了 JS.
+    Flutter 调用了 JS.
+</p>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.5.0/js/amazeui.min.js"></script>
+ <script type="text/javascript">
+        function callJS(message){
+           document.getElementById("p1").style.visibility = message;
+        }
+    </script>
+<script type="text/javascript">
+        function callFlutter(){
+             Toaster.postMessage('js call flutter');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
