@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jing/screens/provider_demo_screen.dart';
+import 'package:jing/widget/gradient_button.dart';
 
 import 'browser_screen.dart';
 
@@ -57,6 +58,22 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: Text('provider demo')),
+            SizedBox(
+              height: 10,
+              width: double.infinity,
+            ),
+            GradientButton(
+              child: Text('渐变色按钮'),
+              height: 50,
+              width: 200,
+              colors: [Colors.lightBlue,Colors.blueGrey],
+              onPressed: (){},
+              borderRadius: BorderRadius.all(Radius.circular(30)),
+            ),
+            SizedBox(
+              height: 10,
+              width: double.infinity,
+            ),
           ],
         ),
       ),
