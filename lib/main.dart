@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jing/screens/browser_screen.dart';
 import 'package:jing/screens/home_screen.dart';
+import 'package:jing/screens/provider_demo_screen.dart';
 
 
 void main() => runApp(new MyApp());
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: <String, WidgetBuilder>{
         Browser.routeName: (_) => Browser(),
+        ProviderDemoScreen.routeName: (_) => ProviderDemoScreen(),
       },
     );
   }
