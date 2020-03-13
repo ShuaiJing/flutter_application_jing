@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jing/screens/provider_demo_screen.dart';
 
 import 'browser_screen.dart';
 
@@ -44,6 +45,18 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: Text('打开本地html')),
+            SizedBox(
+              height: 10,
+              width: double.infinity,
+            ),
+            FlatButton(
+                color: Colors.lightBlue,
+                onPressed: () {
+                  Navigator.of(context).pushNamed(
+                    ProviderDemoScreen.routeName,
+                  );
+                },
+                child: Text('provider demo')),
           ],
         ),
       ),
